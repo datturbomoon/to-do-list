@@ -43,7 +43,6 @@ cd to-do-list
 ---
 
 ## Usage:
-
 1. Type a task in the input field.
 2. Click **+** or press **Enter** to add the task.
 3. Click **x** next to a task to delete it.
@@ -52,12 +51,14 @@ cd to-do-list
 ---
 
 ## File Structure:
+```
 todo-list/  
 │  
 ├─ index.html       # Main HTML file  
 ├─ styles.css       # Styling for the app  
 ├─ script.js        # JavaScript functionality  
-└─ README.md        # Project documentation  
+└─ README.md        # Project documentation
+```
 
 ---
 
