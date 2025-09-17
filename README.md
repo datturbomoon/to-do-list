@@ -1,4 +1,4 @@
-# To-Do List Application
+# To-Do List Web Application
 A simple, responsive To-Do List web app that allows users to **add**, **view**, and **remove tasks**.
 
 ---
