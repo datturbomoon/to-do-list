@@ -1,4 +1,4 @@
-# To-Do List Application
+# To-Do List Web Application
 A simple, responsive To-Do List web app that allows users to **add**, **view**, and **remove tasks**.
 
 ---
@@ -43,7 +43,6 @@ cd to-do-list
 ---
 
 ## Usage:
-
 1. Type a task in the input field.
 2. Click **+** or press **Enter** to add the task.
 3. Click **x** next to a task to delete it.
@@ -52,12 +51,14 @@ cd to-do-list
 ---
 
 ## File Structure:
+```
 todo-list/  
 │  
 ├─ index.html       # Main HTML file  
 ├─ styles.css       # Styling for the app  
 ├─ script.js        # JavaScript functionality  
-└─ README.md        # Project documentation  
+└─ README.md        # Project documentation
+```
 
 ---
 
