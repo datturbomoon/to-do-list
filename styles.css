@@ -128,11 +128,8 @@ body {
 /* Task list */
 #task-list {
   list-style: none;
-  /* display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 8px; */
 
+  /* masonry layout */
   column-count: 2;
   column-gap: 12px;
 }
@@ -154,7 +151,8 @@ body {
   align-items: center;
   width: 100%;
   margin-bottom: 8px;
-  break-inside: avoid; /* keeps cards from breaking */
+  break-inside: avoid;
+  /* keeps cards from breaking */
 }
 
 .task-item:hover,
