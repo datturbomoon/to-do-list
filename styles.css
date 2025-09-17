@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* ? Colors */
+/* Colors */
 :root {
   --accent: #de6f6f;
   --accent-light: #ff6f6f;
@@ -12,14 +12,15 @@
   --primary-muted: #ffffff33;
 }
 
-/* ? RESET & BASE STYLES */
+/* RESET & BASE STYLES */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   transition: all 0.2s ease;
   font-family: "Sour Gummy", sans-serif;
-  /* Prevent text selection highlighting */
+
+  /* prevents text selection highlighting on mobile tap */
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -31,7 +32,7 @@ body {
   color: #2c2c2c;
 }
 
-/* ? List container */
+/* List container */
 .container {
   position: absolute;
   top: 0;
@@ -42,9 +43,10 @@ body {
   padding: 24px;
   max-height: 90vh;
 
-  /* ! Custom scrollbar styles */
+  /* Added custom scrollbar styles (auto disappears on mobiles */
   overflow-y: auto;
-  scrollbar-width: none;
+  /* scrollbar-width: none; */
+  scrollbar-width: thin;
   scrollbar-color: var(--accent-muted) transparent;
 }
 
@@ -53,7 +55,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* ? Input group */
+/* Input group */
 .input-group-container {
   position: fixed;
   bottom: 0;
@@ -100,7 +102,7 @@ body {
   outline: 2px solid var(--accent);
 }
 
-/* ? Add button */
+/* Add button */
 #add-btn {
   padding: 0 14px;
   background-color: var(--accent);
@@ -122,7 +124,7 @@ body {
   transform: scale(0.95);
 }
 
-/* ? Task list */
+/* Task list */
 #task-list {
   list-style: none;
   display: flex;
@@ -131,18 +133,17 @@ body {
   gap: 8px;
 }
 
-/* ? Task item */
 .task-item {
   background-color: var(--primary);
   border: 1px solid var(--primary-muted);
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   display: flex;
-  /* ? default 1 column on mobile */
+  /* default 1 column on mobile */
   flex: 1 1 100%;
 }
 
-/* ? 2 columns on desktop */
+/* 2 columns on desktop */
 @media (min-width: 680px) {
   .task-item {
     flex: 0 0 calc(50% - 12px);
@@ -154,7 +155,7 @@ body {
   background-color: var(--primary-hover);
 }
 
-/* ? Checked state */
+/* Checked state */
 .task-item:has(.task-check:checked) {
   background-color: var(--primary-muted);
   transform: scale(0.95);
@@ -169,9 +170,9 @@ body {
   cursor: pointer;
 }
 
-/* ? Checkbox */
+/* Checkbox */
 .task-check {
-  appearance: none; /* Remove default checkbox styles */
+  appearance: none;
   border: 2px solid var(--accent-muted);
   border-radius: 5px;
   width: 20px;
@@ -189,7 +190,7 @@ body {
   border-color: var(--accent);
 }
 
-/* ? Checkbox checkmark */
+/* Checkbox checkmark */
 .task-check:checked::after {
   content: "";
   position: absolute;
@@ -198,8 +199,8 @@ body {
   width: 4px;
   height: 8px;
   border: solid #fff;
-  border-width: 0 2px 2px 0;  /* Right and bottom borders */
-  transform: rotate(45deg);  /* Rotate to create checkmark */
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 
 }
 
@@ -208,7 +209,7 @@ body {
   color: #999;
 }
 
-/* ? Delete button */
+/* Delete button */
 .delete-btn {
   background-color: transparent;
   cursor: pointer;
