@@ -137,7 +137,7 @@ body {
   background-color: var(--primary);
   border: 1px solid var(--primary-muted);
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  border-radius: 10px;  
   display: flex;
   /* default 1 column on mobile */
   flex: 1 1 100%;
@@ -208,6 +208,14 @@ body {
   text-decoration: line-through;
   color: #999;
 }
+
+.task-text {
+  flex: 1;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+}
+
 
 /* Delete button */
 .delete-btn {
