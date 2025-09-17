@@ -137,30 +137,24 @@ body {
   column-gap: 12px;
 }
 
+/* 1 column on mobile view */
+@media (max-width: 680px) {
+  #task-list {
+    column-count: 1;
+  }
+}
+
 .task-item {
   background-color: var(--primary);
   border: 1px solid var(--primary-muted);
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 
-  max-width: 100%;
-  max-height: fit-content;
-
   display: flex;
   align-items: center;
-  /* flex: 1 1 100%; */
-  /* default 1 column on mobile */
-
   width: 100%;
-  margin: 0 0 12px;
+  margin-bottom: 8px;
   break-inside: avoid; /* keeps cards from breaking */
-}
-
-/* 2 columns on desktop */
-@media (min-width: 680px) {
-  .task-item {
-    flex: 0 0 calc(50% - 12px);
-  }
 }
 
 .task-item:hover,
@@ -179,8 +173,8 @@ body {
   flex: 1;
   align-items: center;
   gap: 12px;
-  padding: 12px 15px;
   cursor: pointer;
+  border: 1px solid red;
 }
 
 /* Checkbox */
@@ -227,15 +221,19 @@ body {
   overflow-wrap: break-word;
   word-break: break-word;
   white-space: normal;
+  border: 1px solid red;
 }
 
 
 /* Delete button */
 .delete-btn {
+  width: 40px;
+  height: 100%;
   background-color: transparent;
   cursor: pointer;
   border: none;
   padding: 8px;
+  border: 1px solid red;
 }
 
 .delete-btn svg {
