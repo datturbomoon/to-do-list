@@ -69,6 +69,7 @@ body {
   max-width: 1080px;
   height: 10vh;
   padding: 0 24px;
+  z-index: 1;
 }
 
 .input-group {
