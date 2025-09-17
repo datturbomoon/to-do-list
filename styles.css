@@ -42,7 +42,8 @@ body {
   max-width: 1080px;
   padding: 24px;
   max-height: 90vh;
-
+  z-index: 0;
+  
   /* Added custom scrollbar styles (auto disappears on mobiles */
   overflow-y: auto;
   /* scrollbar-width: none; */
