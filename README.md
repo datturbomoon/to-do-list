@@ -4,7 +4,7 @@ A simple, responsive To-Do List web app that allows users to **add**, **view**, 
 ---
 
 ## Live Demo:
-[View Project](https://datturbomoon/github.io/to-do-list)
+[View Project](https://datturbomoon.github.io/to-do-list/)
 
 ---
 
