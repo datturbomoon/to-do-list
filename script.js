@@ -33,3 +33,18 @@ function addTask() {
     taskList.appendChild(li);
     taskInput.value = "";
 }
+
+// remove hover effect on mobile view
+if ('ontouchstart' in window) {
+  try {
+    for (let sheet of document.styleSheets) {
+      for (let i = sheet.cssRules.length - 1; i >= 0; i--) {
+        if (sheet.cssRules[i].selectorText && sheet.cssRules[i].selectorText.includes(':hover')) {
+          sheet.deleteRule(i);
+        }
+      }
+    }
+  } catch (e) {
+    console.warn("Couldn't remove hover rules:", e);
+  }
+}
